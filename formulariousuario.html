@@ -2,95 +2,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Inicio de Sesión - </title>
+    <title>Inicio de Sesión - INNOTEC</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #2c3e50, #4ca1af);
+        body{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }
-
-        .login-container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            width: 350px;
-            box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0 15px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #2c3e50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #1a252f;
-        }
-
-        .extra {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .extra a {
-            text-decoration: none;
-            color: #2c3e50;
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-<div class="login-container">
+<form action="login.php" method="POST">
+    
     <h2>Inicio de Sesión</h2>
-    <form action="login.php" method="POST">
-        
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" name="correo" required>
 
-        <label for="contraseña">Contraseña</label>
-        <input type="password" id="contraseña" name="contraseña" required>
+    <label for="correo">Correo:</label><br>
+    <input type="email" name="correo" id="correo" required><br><br>
 
-        <label for="rol">Rol</label>
-        <select name="rol" id="rol" required>
-            <option value="">Seleccione su rol</option>
-            <option value="estudiante">Estudiante</option>
-            <option value="docente">Docente</option>
-            <option value="administrador">Administrador</option>
-        </select>
+    <label for="contraseña">Contraseña:</label><br>
+    <input type="password" name="contraseña" id="contraseña" required><br><br>
 
-        <button type="submit">Ingresar</button>
-    </form>
+    <label for="rol">Rol:</label><br>
+    <select name="rol" id="rol" required>
+        <option value="">Seleccione</option>
+        <option value="estudiante">Estudiante</option>
+        <option value="docente">Docente</option>
+        <option value="administrador">Administrador</option>
+    </select><br><br>
 
-    <div class="extra">
-        <p><a href="#">¿Olvidó su contraseña?</a></p>
-    </div>
-</div>
+    <button type="submit">Ingresar</button>
+
+</form>
 
 </body>
+</html>
+
 </html>
