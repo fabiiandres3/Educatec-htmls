@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Contenido Académico</title>
+</head>
+<body>
+
+    <form action="contenido.html" method="POST" enctype="multipart/form-data">
+        <h2>Formulario Contenido</h2>
+
+        <a href="../index.html">Volver</a><br>
+
+        <div class="form-group">
+            <label for="titulo">Título del Contenido</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Ej: Guía de sintaxis" required><br>
+        </div>
+
+        <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion" placeholder="Escribe un resumen o detalles del contenido..."></textarea><br>
+        </div>
+
+        <div class="form-group">
+            <label for="tipo">Tipo de Contenido</label>
+            <select id="tipo" name="tipo" required>
+                <option value="" disabled selected>Seleccione el formato...</option>
+                <option value="video">Video</option>
+                <option value="pdf">Documento PDF</option>
+                <option value="imagen">Imagen / Infografía</option>
+            </select><br>
+        </div>
+
+        <div class="form-group">
+            <label for="archivo">Seleccionar Archivo</label>
+            <input type="file" id="archivo" name="archivo" required><br>
+        </div>
+
+        <div class="form-group">
+            <label for="fecha">Fecha de Subida</label>
+            <input type="date" id="fecha" name="fecha" required><br>
+        </div>
+
+        <div class="form-group">
+            <label for="modulo">Referencia al Módulo</label>
+            <select id="modulo" name="modulo" required>
+                <option value="" disabled selected>Vincular a un módulo...</option>
+                <option value="Modulo 1">Módulo 1: Introducción</option>
+                <option value="Modulo 2">Módulo 2: Desarrollo Lógico</option>
+                <option value="Modulo 3">Módulo 3: Implementación</option>
+            </select><br>
+        </div>
+
+        <div class="form-group">
+            <label class="checkbox-container">
+                <input type="checkbox" id="revisado" name="revisado" value="true">
+                ¿El contenido ya ha sido revisado?
+            </label><br>
+        </div>
+
+        <button type="submit">Guardar Registro</button>
+    </form>
+
+</body>
+</html>
