@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluaciones</title>
+</head>
+
+<body>
+    <a href="../alumno/alumno_evaluaciones.html">Volver</a> <br><br>
+    <div class="login-container">
+        <center>
+
+            <h1> Evaluaciones </h1>
+
+            <form action="../actividades/atividad_subida.html" method="POST" enctype="multipart/form-data">
+
+                <label for="titulo">Título de la evaluacion</label>
+
+                <br>
+
+                <input type="text" name="titulo" required><br><br>
+
+                <label for="descripcion">Descripción</label>
+
+                <br>
+
+                <textarea name="descripcion" rows="4" required></textarea><br><br>
+
+                <input type="file" name="archivo">
+
+                <br>
+
+                <br>
+
+                <br>
+
+                <button type="submit">Enviar actividad</button>
+            </form>
+        </center>
+    </div>
+</body>
+
+</html>
