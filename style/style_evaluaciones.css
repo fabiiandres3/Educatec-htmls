@@ -1,11 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    height: 100vh;
     background: linear-gradient(to right, #000000, #006EFF);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* BOTÓN VOLVER */
@@ -20,24 +16,26 @@ body {
 
 /* CONTENEDOR */
 .container {
-    width: 100%;
-    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* FORMULARIO GLASS */
+/* FORMULARIO */
 .form-box {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: white; /* ❌ quitamos transparencia */
     padding: 30px;
     border-radius: 15px;
-    color: white;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+    width: 350px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
 }
 
 /* TÍTULO */
 .form-box h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #050A30;
 }
 
 /* INPUTS */
@@ -47,10 +45,15 @@ body {
     margin-bottom: 15px;
 }
 
+label {
+    font-weight: bold;
+    color: #050A30;
+}
+
 input, textarea {
     padding: 10px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #ccc;
     margin-top: 5px;
     outline: none;
 }
@@ -66,15 +69,13 @@ button {
     width: 100%;
     padding: 12px;
     border: none;
-    background: white;
-    color: #050A30;
-    border-radius: 15px;
+    background: linear-gradient(to right, #050A30, #006EFF);
+    color: white;
+    border-radius: 20px;
     cursor: pointer;
-    font-weight: bold;
     transition: 0.3s;
 }
 
 button:hover {
-    background: #006EFF;
-    color: white;
+    opacity: 0.9;
 }
