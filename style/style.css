@@ -9,7 +9,6 @@ body {
 .navbar {
     background: white !important;
     padding: 12px 25px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
 }
 
 /* LINKS */
@@ -39,14 +38,21 @@ body {
     background-color: #006EFF;
     color: white;
 }
-
-/* HERO (REEMPLAZA EL BG-LIGHT) */
 .hero {
-    color: white;
+    background: white;
+    color: #050A30;
     text-align: center;
     padding: 80px 20px;
 }
 
+.hero {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+}
+
+
+/* HERO (REEMPLAZA EL BG-LIGHT) */
 .hero h1 {
     font-size: 50px;
     font-weight: bold;
