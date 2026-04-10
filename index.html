@@ -4,27 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Educatec</title>
+
   <link rel="stylesheet" href="/style/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <img src="../img/nf-removebg-preview.png" width="120">
+
+    <img src="/img/logo.jpg" width="70">
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
+
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Cursos</a>
+          <a class="nav-link" href="/docente/docente_cursos.html">Cursos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Mi progreso</a>
+          <a class="nav-link" href="/alumno/alumno_notas.html">Mi progreso</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contacto</a>
@@ -32,30 +36,33 @@
       </ul>
 
       <div class="d-flex ms-3">
-        <button class="btn btn-light me-2">Mis cursos</button>
-        <button class="btn btn-outline-light">Iniciar sesión</button>
+        <a href="/alumno/alumno_cursos.html" class="btn btn-light me-2">Mis cursos</a>
+        <a href="/formularios/formulario.html" class="btn btn-outline-light">Iniciar sesión</a>
       </div>
+
     </div>
   </div>
 </nav>
 
-<!-- Banner -->
-<div class="bg-light text-center">
+<!-- HERO -->
+<section class="hero text-center">
   <h1>Bienvenido a Educatec</h1>
-  <p>“DONDE LA TECNOLOGÍA IMPULSA El SABER”</p>
-</div>
+  <p>Donde la tecnología impulsa el saber</p>
+  <a href="/formularios/formulario.html" class="btn btn-primary mt-3">Comenzar</a>
+</section>
 
-<!-- Cursos -->
+<!-- CURSOS -->
 <section class="container mt-5">
   <h2 class="text-center mb-4">Contenidos disponibles</h2>
+
   <div class="row g-4">
 
     <div class="col-md-4">
       <div class="card">
-        <img src="/img/Algebra.jpg" class="card-img-top">
+        <img src="/img/Algebra.jpg">
         <div class="card-body">
-          <h5 class="card-title">Algebra</h5>
-          <p class="card-text">Aprende desde lo básico hasta avanzado.</p>
+          <h5>Álgebra</h5>
+          <p>Desde lo básico hasta avanzado</p>
           <button class="btn btn-primary">Ver curso</button>
         </div>
       </div>
@@ -63,10 +70,10 @@
 
     <div class="col-md-4">
       <div class="card">
-        <img src="/img/ingles.jpg" class="card-img-top">
+        <img src="/img/ingles.jpg">
         <div class="card-body">
-          <h5 class="card-title">Inglés</h5>
-          <p class="card-text">Mejora tu nivel con clases dinámicas.</p>
+          <h5>Inglés</h5>
+          <p>Clases dinámicas y prácticas</p>
           <button class="btn btn-primary">Ver curso</button>
         </div>
       </div>
@@ -74,10 +81,10 @@
 
     <div class="col-md-4">
       <div class="card">
-        <img src="/img/b2277d9f8da0d3394d0f818babe4ab20.jpg" class="card-img-top">
+        <img src="/img/b2277d9f8da0d3394d0f818babe4ab20.jpg">
         <div class="card-body">
-          <h5 class="card-title">Ciencias</h5>
-          <p class="card-text">Conoce las mejores investigaciones</p>
+          <h5>Ciencias</h5>
+          <p>Explora el mundo científico</p>
           <button class="btn btn-primary">Ver curso</button>
         </div>
       </div>
@@ -86,28 +93,33 @@
   </div>
 </section>
 
-<!-- Profesores -->
+<!-- PROFESORES -->
 <section class="container mt-5">
   <h2 class="text-center">Nuestros Profesores</h2>
+
   <div class="row text-center mt-4">
 
     <div class="col-md-6">
-      <img src="/img/profesor_juan.jpg" class="rounded-circle" width="120">
-      <h4>Juan Pérez</h4>
-      <p>Matemáticas</p>
+      <div class="prof-card">
+        <img src="/img/profesor_juan.jpg">
+        <h4>Juan Pérez</h4>
+        <p>Matemáticas</p>
+      </div>
     </div>
 
     <div class="col-md-6">
-      <img src="/img/profesora_Maria.jpg" class="rounded-circle" width="120">
-      <h4>María Gómez</h4>
-      <p>Inglés</p>
+      <div class="prof-card">
+        <img src="/img/profesora_Maria.jpg">
+        <h4>María Gómez</h4>
+        <p>Inglés</p>
+      </div>
     </div>
 
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="text-center p-3 mt-5">
+<!-- FOOTER -->
+<footer>
   <p>&copy; 2026 Educatec - Plataforma Educativa</p>
 </footer>
 
@@ -115,4 +127,3 @@
 
 </body>
 </html>
-
