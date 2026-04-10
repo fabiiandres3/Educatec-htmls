@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #006EFF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR */
+.container {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* FORMULARIO */
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* TEXTO */
+.form-box h2 {
+    margin-bottom: 10px;
+    color: #050A30;
+}
+
+.form-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+/* BOTÓN */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(to right, #050A30, #006EFF);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* LINK */
+.extra {
+    margin-top: 15px;
+}
+
+.extra a {
+    text-decoration: none;
+    color: #006EFF;
+    font-size: 14px;
+}
