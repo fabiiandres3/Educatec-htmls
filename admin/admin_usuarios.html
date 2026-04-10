@@ -1,22 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Usuarios - Admin</title>
+    <link rel="stylesheet" href="/style/style_usuarios_admin.css">
 </head>
+
 <body>
 
+<!-- HEADER -->
+<div class="header">
     <h2>Gestión de Usuarios</h2>
+    <a href="admin_dashboard.html">← Volver</a>
+</div>
 
-    <nav>
-        <a href="admin_dashboard.html">Volver al Panel</a>
-    </nav>
+<!-- CONTENIDO -->
+<div class="content">
 
-    <h3>Lista de Usuarios</h3>
+    <div class="table-container">
 
-    <ul>
-        <li>Juan - Alumno</li>
-        <li>Maria - Docente</li>
-    </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Rol</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>Alumno</td>
+                    <td>
+                        <button class="edit">Editar</button>
+                        <button class="delete">Eliminar</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>María</td>
+                    <td>Docente</td>
+                    <td>
+                        <button class="edit">Editar</button>
+                        <button class="delete">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
 
 </body>
 </html>

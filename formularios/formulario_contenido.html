@@ -4,63 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Contenido Académico</title>
+    <link rel="stylesheet" href="/style/style_form_contenido.css">
 </head>
+
 <body>
 
-    <form action="contenido.html" method="POST" enctype="multipart/form-data">
-        <h2>Formulario Contenido</h2>
+<div class="container">
 
-        <a href="../index.html">Volver</a><br>
+    <form action="contenido.html" method="POST" enctype="multipart/form-data" class="formulario">
 
-        <div class="form-group">
-            <label for="titulo">Título del Contenido</label>
-            <input type="text" id="titulo" name="titulo" placeholder="Ej: Guía de sintaxis" required><br>
-        </div><br>
+        <div class="header">
+            <h2>Registro de Contenido</h2>
+            <a href="../index.html">← Volver</a>
+        </div>
 
-        <div class="form-group">
-            <label for="descripcion">Descripción</label>
-            <textarea id="descripcion" name="descripcion" placeholder="Escribe un resumen o detalles del contenido..."></textarea><br>
-        </div><br>
+        <div class="grid">
 
-        <div class="form-group">
-            <label for="tipo">Tipo de Contenido</label>
-            <select id="tipo" name="tipo" required>
-                <option value="" disabled selected>Seleccione el formato...</option>
-                <option value="video">Video</option>
-                <option value="pdf">Documento PDF</option>
-                <option value="imagen">Imagen / Infografía</option>
-            </select><br>
-        </div><br>
+            <div class="form-group">
+                <label>Título</label>
+                <input type="text" name="titulo" placeholder="Ej: Guía de sintaxis" required>
+            </div>
 
-        <div class="form-group">
-            <label for="archivo">Seleccionar Archivo</label>
-            <input type="file" id="archivo" name="archivo" required><br>
-        </div><br>
+            <div class="form-group">
+                <label>Tipo</label>
+                <select name="tipo" required>
+                    <option disabled selected>Seleccionar...</option>
+                    <option value="video">Video</option>
+                    <option value="pdf">PDF</option>
+                    <option value="imagen">Imagen</option>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <label for="fecha">Fecha de Subida</label>
-            <input type="date" id="fecha" name="fecha" required><br>
-        </div><br>
+            <div class="form-group full">
+                <label>Descripción</label>
+                <textarea name="descripcion" placeholder="Describe el contenido..."></textarea>
+            </div>
 
-        <div class="form-group">
-            <label for="modulo">Referencia al Módulo</label>
-            <select id="modulo" name="modulo" required>
-                <option value="" disabled selected>Vincular a un módulo...</option>
-                <option value="Modulo 1">Módulo 1: Introducción</option>
-                <option value="Modulo 2">Módulo 2: Desarrollo Lógico</option>
-                <option value="Modulo 3">Módulo 3: Implementación</option>
-            </select><br>
-        </div><br>
+            <div class="form-group">
+                <label>Archivo</label>
+                <input type="file" name="archivo" required>
+            </div>
 
-        <div class="form-group">
-            <label class="checkbox-container">
-                <input type="checkbox" id="revisado" name="revisado" value="true">
-                ¿El contenido ya ha sido revisado?
-            </label><br>
-        </div><br>
+            <div class="form-group">
+                <label>Fecha</label>
+                <input type="date" name="fecha" required>
+            </div>
 
-        <button type="submit">Guardar Registro</button>
+            <div class="form-group full">
+                <label>Módulo</label>
+                <select name="modulo" required>
+                    <option disabled selected>Seleccionar módulo...</option>
+                    <option>Módulo 1: Introducción</option>
+                    <option>Módulo 2: Desarrollo Lógico</option>
+                    <option>Módulo 3: Implementación</option>
+                </select>
+            </div>
+
+            <div class="form-group full checkbox">
+                <label>
+                    <input type="checkbox" name="revisado">
+                    Contenido revisado
+                </label>
+            </div>
+
+        </div>
+
+        <button type="submit">Guardar</button>
+
     </form>
+
+</div>
 
 </body>
 </html>

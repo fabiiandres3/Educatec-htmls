@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #000000, #006EFF);
+}
+
+/* HEADER */
+.header {
+    background: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    color: #050A30;
+}
+
+.header a {
+    text-decoration: none;
+    color: #006EFF;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: #050A30;
+}
+
+/* CONTENIDO */
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* FORMULARIO */
+.form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+}
+
+/* INPUTS */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #050A30;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+/* EFECTO */
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #006EFF;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0,110,255,0.5);
+}
+
+/* BOTÓN */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #050A30, #006EFF);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}

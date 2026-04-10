@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #006EFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTENEDOR */
+.login-container {
+    background: #FFFFFF;
+    padding: 35px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+    animation: fadeIn 0.6s ease;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #050A30;
+}
+
+label {
+    font-weight: bold;
+    color: #050A30;
+}
+
+/* INPUTS */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #006EFF;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0,110,255,0.5);
+}
+
+/* BOTÓN */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #050A30, #006EFF);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+/* LINKS */
+.extra {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.extra a {
+    text-decoration: none;
+    color: #050A30;
+    font-size: 14px;
+}
+
+.extra a:hover {
+    color: #006EFF;
+}

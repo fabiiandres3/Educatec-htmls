@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #000000, #006EFF);
+}
+
+/* HEADER */
+.header {
+    background: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    color: #050A30;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #006EFF;
+}
+
+.nav-links a:hover {
+    color: #050A30;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn {
+    background: #006EFF;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: #004fcc;
+}
+
+/* CONTENIDO */
+.content {
+    padding: 30px;
+}
+
+/* TARJETAS DE EVALUACIÓN */
+.evaluacion {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.evaluacion:hover {
+    transform: translateY(-5px);
+}
+
+/* TEXTO */
+.evaluacion h3 {
+    color: #050A30;
+    margin-bottom: 5px;
+}
+
+.evaluacion p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* BOTÓN */
+.evaluacion button {
+    background: linear-gradient(to right, #050A30, #006EFF);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.evaluacion button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}

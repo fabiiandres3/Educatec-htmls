@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #006EFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* CONTENEDOR */
+.box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+    width: 350px;
+    animation: fadeIn 0.5s ease;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ICONO */
+.check {
+    font-size: 50px;
+    color: #006EFF;
+    margin-bottom: 10px;
+}
+
+/* TITULO */
+h1 {
+    color: #050A30;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* TEXTO */
+p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* BOTÓN */
+button {
+    padding: 12px 25px;
+    background: linear-gradient(to right, #050A30, #006EFF);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* LINK */
+a {
+    text-decoration: none;
+}

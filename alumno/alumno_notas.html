@@ -1,20 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Mis Notas</title>
+    <link rel="stylesheet" href="/style/style_alumno_notas.css">
 </head>
+
 <body>
 
+<!-- HEADER -->
+<div class="header">
     <h2>Mis Calificaciones</h2>
+    <a href="alumno_dashboard.html">← Volver</a>
+</div>
 
-    <nav>
-        <a href="alumno_dashboard.html">Volver</a>
-    </nav>
+<!-- CONTENIDO -->
+<div class="content">
 
-    <ul>
-        <li>Matemáticas: 4.5</li>
-        <li>Ciencias: 4.0</li>
-    </ul>
+    <div class="nota">
+        <div class="info">
+            <h3>Matemáticas</h3>
+            <span>4.5</span>
+        </div>
+        <div class="barra">
+            <div class="progreso" style="width: 90%;"></div>
+        </div>
+    </div>
+
+    <div class="nota">
+        <div class="info">
+            <h3>Ciencias</h3>
+            <span>4.0</span>
+        </div>
+        <div class="barra">
+            <div class="progreso" style="width: 80%;"></div>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
+

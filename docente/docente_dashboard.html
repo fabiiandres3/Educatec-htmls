@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Panel Docente</title>
+    <link rel="stylesheet" href="/style/style_docente_dashboard.css">
 </head>
+
 <body>
 
-    <h1>Panel Docente</h1>
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>Docente</h2>
 
-    <nav>
-        <a href="docente_cursos.html">Mis Cursos</a> |
-        <a href="docente_asistencia.html">Asistencia</a> |
-        <a href="docente_calificaciones.html">Calificaciones</a> |
-        <a href="../index.html">Cerrar Sesión</a>
-    </nav>
+    <a href="docente_cursos.html">📚 Mis Cursos</a>
+    <a href="docente_asistencia.html">📋 Asistencia</a>
+    <a href="docente_calificaciones.html">📝 Calificaciones</a>
+
+    <div class="logout">
+        <a href="../index.html">🚪 Cerrar Sesión</a>
+    </div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="main">
+    <h1>Bienvenido, Docente 👨‍🏫</h1>
+    <p>Gestiona tus cursos, asistencia y calificaciones desde este panel.</p>
+
+    <div class="cards">
+
+        <a href="docente_cursos.html" class="card">
+            <h3>Mis Cursos</h3>
+            <p>Administra tus clases</p>
+        </a>
+
+        <a href="docente_asistencia.html" class="card">
+            <h3>Asistencia</h3>
+            <p>Registra asistencia</p>
+        </a>
+
+        <a href="docente_calificaciones.html" class="card">
+            <h3>Calificaciones</h3>
+            <p>Gestiona notas</p>
+        </a>
+
+    </div>
+</div>
 
 </body>
 </html>

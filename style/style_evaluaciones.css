@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to right, #000000, #006EFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOTÓN VOLVER */
+.volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CONTENEDOR */
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* FORMULARIO GLASS */
+.form-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+}
+
+/* TÍTULO */
+.form-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    outline: none;
+}
+
+/* TEXTAREA */
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* BOTÓN */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: white;
+    color: #050A30;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #006EFF;
+    color: white;
+}

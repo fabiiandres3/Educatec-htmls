@@ -1,25 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Calificaciones</title>
+    <link rel="stylesheet" href="/style/style_docente_notas.css">
 </head>
+
 <body>
 
+<!-- HEADER -->
+<div class="header">
     <h2>Registro de Notas</h2>
+    <a href="docente_dashboard.html">← Volver</a>
+</div>
 
-    <nav>
-        <a href="docente_dashboard.html">Volver</a>
-    </nav>
+<!-- CONTENIDO -->
+<div class="content">
 
-    <form>
-        <label>Alumno:</label>
-        <input type="text"><br><br>
+    <form class="form">
 
-        <label>Nota:</label>
-        <input type="number"><br><br>
+        <div class="input-group">
+            <label>Alumno</label>
+            <input type="text" placeholder="Nombre del alumno">
+        </div>
 
-        <button>Guardar</button>
+        <div class="input-group">
+            <label>Nota</label>
+            <input type="number" step="0.1" min="0" max="5" placeholder="Ej: 4.5">
+        </div>
+
+        <!-- PREVIEW -->
+        <div class="preview">
+            <p>Nota actual:</p>
+            <span id="valorNota">0.0</span>
+        </div>
+
+        <button type="submit">Guardar</button>
+
     </form>
+
+</div>
+
+<script>
+const inputNota = document.querySelector("input[type='number']");
+const valor = document.getElementById("valorNota");
+
+inputNota.addEventListener("input", () => {
+    valor.textContent = inputNota.value || "0.0";
+});
+</script>
 
 </body>
 </html>
+
