@@ -1,125 +1,137 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Educatec</title>
 
-  <link rel="stylesheet" href="style/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Educatec</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
 
-    <img src="img/logo.jpg" width="70">
+            <img src="img/logo.jpg" width="70">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
 
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="materias/materias.html">Materias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto/contacto.html">Contacto</a>
-        </li>
-      </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="materias/materias.html">Materias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto/contacto.html">Contacto</a>
+                    </li>
+                </ul>
 
-      <div class="d-flex ms-3">
-        <a href="formularios/formulario.html" class="btn btn-outline-light">Iniciar sesión</a>
-      </div>
+                <div class="d-flex ms-3">
+                    <a href="formularios/formulario.html" class="btn btn-outline-light">Iniciar sesión</a>
+                </div>
 
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero text-center">
-  <h1>Bienvenido a Educatec</h1>
-  <p>Donde la tecnología impulsa el saber</p>
-  <a href="formularios/formulario.html" class="btn btn-primary mt-3">Comenzar</a>
-</section>
-
-<!-- CURSOS -->
-<section class="container mt-5">
-  <h2 class="text-center mb-4">Contenidos disponibles</h2>
-
-  <div class="row g-4">
-
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/Algebra.jpg">
-        <div class="card-body">
-          <h5>Álgebra</h5>
-          <p>Desde lo básico hasta avanzado</p>
-          <button class="btn btn-primary">Ver curso</button>
+            </div>
         </div>
-      </div>
-    </div>
+    </nav>
 
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/ingles.jpg">
-        <div class="card-body">
-          <h5>Inglés</h5>
-          <p>Clases dinámicas y prácticas</p>
-          <button class="btn btn-primary">Ver curso</button>
+    <!-- HERO -->
+    <section class="hero">
+
+        <video autoplay muted loop playsinline class="hero-video">
+    <source src="img/video/Agent_video_Pippit_20260411223042.mp4" type="video/mp4">
+  </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content text-center">
+            <h1>Bienvenido a Educatec</h1>
+            <p>Donde la tecnología impulsa el saber</p>
+            <a href="formularios/formulario.html" class="btn btn-primary mt-3">Comenzar</a>
         </div>
-      </div>
-    </div>
 
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/b2277d9f8da0d3394d0f818babe4ab20.jpg">
-        <div class="card-body">
-          <h5>Ciencias</h5>
-          <p>Explora el mundo científico</p>
-          <button class="btn btn-primary">Ver curso</button>
+    </section>
+    </section>
+    <!-- CURSOS -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-4">Contenidos disponibles</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Algebra.jpg">
+                    <div class="card-body">
+                        <h5>Álgebra</h5>
+                        <p>Desde lo básico hasta avanzado</p>
+                        <button class="btn btn-primary">Ver curso</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/ingles.jpg">
+                    <div class="card-body">
+                        <h5>Inglés</h5>
+                        <p>Clases dinámicas y prácticas</p>
+                        <button class="btn btn-primary">Ver curso</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/b2277d9f8da0d3394d0f818babe4ab20.jpg">
+                    <div class="card-body">
+                        <h5>Ciencias</h5>
+                        <p>Explora el mundo científico</p>
+                        <button class="btn btn-primary">Ver curso</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!-- PROFESORES -->
+    <section class="container mt-5">
+        <h2 class="text-center">Nuestros Profesores</h2>
 
-<!-- PROFESORES -->
-<section class="container mt-5">
-  <h2 class="text-center">Nuestros Profesores</h2>
+        <div class="row text-center mt-4">
 
-  <div class="row text-center mt-4">
+            <div class="col-md-6">
+                <div class="prof-card">
+                    <img src="img/profesor_juan.jpg">
+                    <h4>Juan Pérez</h4>
+                    <p>Matemáticas</p>
+                </div>
+            </div>
 
-    <div class="col-md-6">
-      <div class="prof-card">
-        <img src="img/profesor_juan.jpg">
-        <h4>Juan Pérez</h4>
-        <p>Matemáticas</p>
-      </div>
-    </div>
+            <div class="col-md-6">
+                <div class="prof-card">
+                    <img src="img/profesora_Maria.jpg">
+                    <h4>María Gómez</h4>
+                    <p>Inglés</p>
+                </div>
+            </div>
 
-    <div class="col-md-6">
-      <div class="prof-card">
-        <img src="img/profesora_Maria.jpg">
-        <h4>María Gómez</h4>
-        <p>Inglés</p>
-      </div>
-    </div>
+        </div>
+    </section>
 
-  </div>
-</section>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Educatec - Plataforma Educativa</p>
+    </footer>
 
-<!-- FOOTER -->
-<footer>
-  <p>&copy; 2026 Educatec - Plataforma Educativa</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
