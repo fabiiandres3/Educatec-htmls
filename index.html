@@ -13,10 +13,13 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid">
 
-            <img src="img/logo.jpg" width="70">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.jpg" class="logo">
+                <span class="brand-text">Educatec</span>
+            </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -24,18 +27,18 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
 
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="materias/materias.html">Materias</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacto/contacto.html">Contacto</a>
                     </li>
-                </ul>
 
-                <div class="d-flex ms-3">
-                    <a href="formularios/formulario.html" class="btn btn-outline-light">Iniciar sesión</a>
-                </div>
+                    <li class="nav-item ms-3">
+                        <a href="formularios/formulario.html" class="btn btn-login">Iniciar sesión</a>
+                    </li>
+                </ul>
 
             </div>
         </div>
