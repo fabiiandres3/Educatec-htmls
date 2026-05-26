@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #000000, #006EFF);
+}
+
+/* HEADER */
+.header {
+    background: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    color: #050A30;
+}
+
+.header a {
+    text-decoration: none;
+    color: #006EFF;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: #050A30;
+}
+
+/* CONTENIDO */
+.content {
+    padding: 30px;
+}
+
+/* TARJETA CURSO */
+.curso {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.curso:hover {
+    transform: translateY(-5px);
+}
+
+/* INFO */
+.info h3 {
+    margin: 0;
+    color: #050A30;
+}
+
+.info p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* BOTONES */
+.acciones button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* BOTÓN VER */
+.acciones button:first-child {
+    background: #006EFF;
+    color: white;
+}
+
+.acciones button:first-child:hover {
+    background: #004fcc;
+}
+
+/* BOTÓN ASISTENCIA */
+.acciones button:last-child {
+    background: #050A30;
+    color: white;
+}
+
+.acciones button:last-child:hover {
+    opacity: 0.8;
+}

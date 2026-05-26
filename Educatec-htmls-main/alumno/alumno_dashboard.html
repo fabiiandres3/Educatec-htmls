@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Alumno | EducaTec</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/style_alumno_dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <!-- LOGO -->
+        <div class="logo-area">
+
+            <img src="../img/logo2.png" alt="Logo">
+
+            <h2>EducaTec</h2>
+
+        </div>
+
+        <!-- MENU -->
+        <nav class="menu">
+
+            <a href="#" class="active">
+                <i class="bi bi-grid-fill"></i>
+                Inicio
+            </a>
+
+            <a href="alumno_cursos.html">
+                <i class="bi bi-book-half"></i>
+                Mis Cursos
+            </a>
+
+            <a href="alumno_evaluaciones.html">
+                <i class="bi bi-clipboard-check-fill"></i>
+                Evaluaciones
+            </a>
+
+            <a href="alumno_notas.html">
+                <i class="bi bi-bar-chart-fill"></i>
+                Mis Notas
+            </a>
+
+            <a href="../formularios/Formulario_Evaluaciones.html">
+                <i class="bi bi-upload"></i>
+                Subir Actividad
+            </a>
+
+        </nav>
+
+        <!-- CERRAR SESION -->
+        <a href="../index.html" class="logout-btn">
+
+            <i class="bi bi-box-arrow-left"></i>
+            Cerrar Sesión
+
+        </a>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <div>
+
+                <h1>Panel del Estudiante</h1>
+
+                <p>
+                    Bienvenido nuevamente 👋
+                </p>
+
+            </div>
+
+            <div class="profile">
+
+                <i class="bi bi-person-circle"></i>
+
+                <span>Estudiante</span>
+
+            </div>
+
+        </header>
+
+        <!-- WELCOME -->
+        <section class="welcome-card">
+
+            <div>
+
+                <h2>
+                    Continúa aprendiendo 🚀
+                </h2>
+
+                <p>
+                    Accede a tus cursos, revisa evaluaciones y
+                    consulta tu rendimiento académico.
+                </p>
+
+            </div>
+
+            <button>
+                Ver progreso
+            </button>
+
+        </section>
+
+        <!-- STATS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="bi bi-book"></i>
+
+                <div>
+
+                    <h3>8</h3>
+
+                    <p>Cursos activos</p>
+
+                </div>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="bi bi-clipboard-data"></i>
+
+                <div>
+
+                    <h3>4</h3>
+
+                    <p>Evaluaciones pendientes</p>
+
+                </div>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="bi bi-award-fill"></i>
+
+                <div>
+
+                    <h3>4.7</h3>
+
+                    <p>Promedio general</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DASHBOARD -->
+        <section class="dashboard-grid">
+
+            <!-- CARD -->
+            <a href="alumno_cursos.html" class="dashboard-card">
+
+                <div class="icon-area">
+                    <i class="bi bi-book-half"></i>
+                </div>
+
+                <h3>Mis Cursos</h3>
+
+                <p>
+                    Consulta tus clases y contenidos académicos.
+                </p>
+
+            </a>
+
+            <!-- CARD -->
+            <a href="alumno_evaluaciones.html" class="dashboard-card">
+
+                <div class="icon-area">
+                    <i class="bi bi-pencil-square"></i>
+                </div>
+
+                <h3>Evaluaciones</h3>
+
+                <p>
+                    Realiza actividades y revisa tareas pendientes.
+                </p>
+
+            </a>
+
+            <!-- CARD -->
+            <a href="alumno_notas.html" class="dashboard-card">
+
+                <div class="icon-area">
+                    <i class="bi bi-bar-chart-fill"></i>
+                </div>
+
+                <h3>Mis Notas</h3>
+
+                <p>
+                    Consulta tus resultados académicos.
+                </p>
+
+            </a>
+
+            <!-- CARD -->
+            <a href="../formularios/Formulario_Evaluaciones.html" class="dashboard-card">
+
+                <div class="icon-area">
+                    <i class="bi bi-upload"></i>
+                </div>
+
+                <h3>Subir Actividad</h3>
+
+                <p>
+                    Envía evaluaciones y archivos al sistema.
+                </p>
+
+            </a>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
